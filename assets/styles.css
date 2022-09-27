@@ -2,7 +2,7 @@
     --header: #414042;
     --accent: #98d5d5;
     --h2-color: #334f68;
-    --p-color: #47546e;
+    --p-color: #333945;
     --body-background: white;
 }
 
@@ -31,24 +31,25 @@ h1 {
     color: var(--header);
     height: fit-content;
     text-align: end;
-    width: 25%;
+    width: 30%;
+    max-width: 400px;
     padding: 12px;
 }
 
-.header-links ul {
+.links ul {
     display: flex;
     justify-content: end;
     list-style-type: none;
     margin-right: 5%;
 }
 
-.header-links a {
+.links a {
     color: var(--accent);
     padding: 0 10px;
     text-decoration: none;
 }
 
-.header-links li {
+.links li {
     margin: 0 10px;
     border-bottom: 4px solid var(--accent);
 }
@@ -81,6 +82,8 @@ h1 {
     display: flex;
     flex-direction: row;
     margin-left: 10%;
+    padding-right: 30%;
+    width: fit-content;
 }
 
 .content-box h2 {
@@ -104,7 +107,7 @@ h1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
     color: var(--p-color);
     font-size: 16px;
-    
+    margin: 0px;
 }
 
 .large-image {
@@ -115,7 +118,6 @@ h1 {
     height: 400px;
     background-size: cover;
     background-position: center;
-    background-image: url("/assets/images/app-image.jpg");
     border: 8px solid var(--accent); 
     align-items: flex-end;
     justify-content: flex-start; 
@@ -159,10 +161,33 @@ h1 {
     height: 200px;
     background-size: cover;
     background-position: center;
-    background-image: url("/assets/images/app-image.jpg");
     border: 8px solid var(--accent); 
     align-items: flex-end;
     justify-content: flex-start; 
 }
 
+#contact-me .links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
 
+#contact-me .links a {
+    color: var(--p-color);
+}
+
+#contact-me .links li {
+    border-bottom: 4px solid var(--h2-color);
+}
+
+#app-project {
+    background-image: url("/assets/images/app-image.jpg");
+}
+
+#calculator-project {
+    background-image: url("/assets/images/numbers-image.jpg");
+}
+
+#weather-project {
+    background-image: url("/assets/images/weather-image.jpg");
+}
