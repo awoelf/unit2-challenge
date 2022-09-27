@@ -1,55 +1,106 @@
 :root {
     --header: #414042;
     --accent: #98d5d5;
+    --h2-color: #334f68;
+    --p-color: #47546e;
     --body-background: white;
 }
 
 body {
     background-color: var(--body-background);
-    margin: 0px;
+    overflow-x: hidden;
 }
 
-h1, h2, a, p {
+h1, h2, a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
 
-header > section {
+header {
     display: flex;
     flex-direction: row;
     background-color: var(--header);
     width: 100%;
-    height: 100px;
+    height: fit-content;
     align-items: center;
+    margin-bottom: 0px;
 }
 
-header h1 {
+h1 {
     background-color: var(--accent);
     color: var(--header);
     height: fit-content;
-    width: 20%;
     text-align: end;
+    width: 25%;
     padding: 12px;
-    font-weight: 600;
 }
 
-li > a {
+.header-links ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin-right: 5%;
+}
+
+.header-links a {
     color: var(--accent);
-    font-weight: 600;
     padding: 0 10px;
 }
 
-li {
+.header-links li {
     margin: 0 10px;
     border-bottom: 4px solid var(--accent);
 }
 
-
-
-
-#header-links {
+.cover-image {
     display: flex;
-    flex-direction: row-reverse;
-    list-style-type: none;
-    margin-right: 5%;
+    flex-direction: row;
+    margin: 0px;
+    height: 200px; 
+    width: 100%;
+    background-image: url("/assets/cover-image.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: flex-end;
+    justify-content: flex-end;   
 }
+
+.cover-image h2 {
+    width: fit-content;
+    text-align: end;
+    margin: 0px;
+    background-color: var(--accent);
+    color: var(--header);
+    padding: 10px 15px;
+    margin: 25px 70px;
+}
+
+.content-box {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.content-box h2 {
+    color: var(--h2-color);
+    font-size: 250%;
+    width: min-content;
+    text-align: right;
+}
+
+.content {
+    border-left: 4px solid var(--h2-color);
+    width: 60%;
+    padding: 20px 50px;
+    margin: 15px;
+}
+
+.content p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    color: var(--p-color);
+    font-size: 16px;
+}
+
+
 
