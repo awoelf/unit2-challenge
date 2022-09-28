@@ -222,6 +222,17 @@ li {
     h1 {
         min-width: 200px;
     }
+
+    ul {
+        flex-wrap: wrap;
+        width: 200px;
+        justify-content: flex-end;
+    }
+
+    header section {
+        width: min-content;
+        margin-right: 5%;
+    }
     
     .small-image-box {
         flex-direction: column;
@@ -265,7 +276,7 @@ li {
         margin: 5px 0px;
     }
 
-    #contact-me ul, ul {
+    #contact-me ul {
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin: 10px 0px;
@@ -294,7 +305,7 @@ li {
 }
 
 @media screen and (max-width: 668px) {
-    .content-box {
+       .content-box {
         flex-direction: column;
         align-items: flex-start;
         margin-top: 5px;
