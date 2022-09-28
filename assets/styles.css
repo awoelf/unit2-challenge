@@ -280,6 +280,7 @@ li {
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin: 10px 0px;
+        width: 100%;
     }
 
     #contact-me ul, li {
@@ -305,7 +306,7 @@ li {
 }
 
 @media screen and (max-width: 668px) {
-       .content-box {
+    .content-box {
         flex-direction: column;
         align-items: flex-start;
         margin-top: 5px;
