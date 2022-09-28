@@ -77,7 +77,6 @@ li {
 .cover-image h2 {
     width: fit-content;
     text-align: end;
-    margin: 0px;
     background-color: var(--accent);
     color: var(--header);
     padding: 10px 15px;
@@ -216,4 +215,95 @@ li {
 #box-link {
     padding: 0px;
     width: 49%;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        min-width: 200px;
+    }
+    
+    .small-image-box {
+        flex-direction: column;
+    }
+
+    .image-titlecard {
+        min-width: 200px;        
+    }
+
+    .image {
+        margin-bottom: 0px;
+    }
+
+    .cover-image {
+        align-items: center;
+    }
+
+    .cover-image h2 {
+        text-align: center;
+        margin: auto;
+
+    }
+    .content-box {
+        margin-left: 0;
+        max-width: 90%;
+    }
+
+    .content-box h2 {
+        font-size: 200%;
+        width: 150px;
+    }
+
+    #box-link {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #contact-me h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-me ul, ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #contact-me ul, li {
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #contact-me.content-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    #contact-me *.content {
+        width: 60%;
+        margin: 0px;
+        border-left: 0px;
+        border-top: 4px solid var(--h2-color);
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .content-box {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5px;
+    }
+
+    .content-box h2 {
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .content {
+        padding-right: 0%;
+        margin-right: 0%;
+        margin-top: 2px;
+    }
 }
